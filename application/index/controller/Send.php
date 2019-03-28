@@ -18,6 +18,13 @@ class Send
             }
             //生成随机数
             $code = mt_rand(1000,9999);
-            echo $code;
+            try{
+               $response =  Sms::sendSms($phoneNum,$code);
+            }catch (\Exception $e){
+                return Util::show(config('error'),'阿里大于内部异常');
+            }
+            if($response->sta)
+            var_dump($response);
+
    }
 }
