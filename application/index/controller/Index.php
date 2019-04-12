@@ -8,7 +8,7 @@ class Index
     public function index()
     {
 
-        echo "victor wudixiaowangi";
+       return '';
     }
     public function victor(){
         echo date("Ymd H:i:s");

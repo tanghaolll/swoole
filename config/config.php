@@ -242,4 +242,10 @@ return [
     ],
     'success' => 1,
     'error' => 0,
+    'redis' =>       [
+        'host' => "127.0.0.1",
+        'port' => 6379,
+        'time' => 120,
+        'connectOut' => 5 //链接超时
+    ]
 ];
